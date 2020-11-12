@@ -1,10 +1,16 @@
 import React from 'react'
-import './style/app'
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Routes from './Routes'
+// import './style/App'
 
 export default function App() {
     return (
-        <div className="app">
-            <h1>App</h1>
-        </div>
+        <BrowserRouter>
+            <div className="app">
+                <Navbar />
+                <Routes />
+            </div>
+        </BrowserRouter>
     )
 }
