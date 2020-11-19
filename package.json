@@ -2,7 +2,7 @@
   "name": "shopping-cart-react-redux",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "author": "Natalia Alexandra O.",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
