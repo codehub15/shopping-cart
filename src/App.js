@@ -1,8 +1,9 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import Navbar from './components/Navbar'
 import Routes from './Routes'
-// import './style/App'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import './style/app.css'
 
 export default function App() {
     return (
@@ -10,6 +11,7 @@ export default function App() {
             <div className="app">
                 <Navbar />
                 <Routes />
+                <Footer />
             </div>
         </BrowserRouter>
     )
