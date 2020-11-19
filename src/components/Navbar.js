@@ -28,7 +28,7 @@ function Navbar({ cart, user }) {
                 </li>
                 <li>
                     <NavLink to="/auth" activeClassName="active">
-                        {!user.isLogin ? "Login" : "Logout"}
+                        {!user.isAuth ? "Login" : "Logout"}
                     </NavLink>
                 </li>
                 <li className="nav-cart">
@@ -44,10 +44,9 @@ function Navbar({ cart, user }) {
 }
 
 const mapStateToProps = (state) => {
-    // console.log("state.user.name:", state.user.user.name)
     return {
         cart: state.shop.cart,
-        user: state.user.user
+        user: state.user
     }
 }
 
