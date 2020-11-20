@@ -7,13 +7,9 @@ const userInitState = {
 }
 
 const userReducer = (state = userInitState, action) => {
-    console.log("action r:", action)
-    console.log("state:", state)
-
     switch (action.type) {
         case actionTypes.AUTH:
-            console.log("action a:", action.user)
-            if (state.user === action.user && state.password === action.password) {
+            if (state.state === action.state && state.password === action.password) {
                 return { ...state, isAuth: !state.isAuth };
             }
             else {
@@ -21,7 +17,7 @@ const userReducer = (state = userInitState, action) => {
             }
 
         case actionTypes.LOGOUT:
-            return { ...state, isAuth: false };
+            return { isAuth: false };
 
         default:
             return state;
