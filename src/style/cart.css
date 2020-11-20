@@ -1,4 +1,5 @@
 .cart {
+    min-height: 78vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,11 +13,14 @@
 
 .cart-details {
     display: flex;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .cart-item {
     width: 38rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
 }
 
 .cart-item h3 {
@@ -36,6 +40,10 @@ p {
 .qty {
     width: 3rem;
     margin-left: 0.5rem;
+}
+
+.cart-summary {
+    margin-left: 1rem;
 }
 
 .cart-summary  h4 {
