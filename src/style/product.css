@@ -27,9 +27,9 @@
     object-fit: contain;
 }
 
-.product-img img {
+/* .product-img img {
     width: 100%;
-}
+} */
 
 .product h3 {
     padding-bottom: 1.5rem;
