@@ -1,15 +1,16 @@
 import * as actionTypes from "./user-types";
 
-export const authorizeUser = (name, password) => {
+export const authorizeUser = (user, password) => {
     return {
         type: actionTypes.AUTH,
-        user: name,
-        password
+        payload: {
+            user,
+            password
+        }
     }
 }
 
 export const logout = () => {
-    // console.log("logout")
     return {
         type: actionTypes.LOGOUT,
     }

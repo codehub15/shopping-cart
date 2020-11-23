@@ -3,12 +3,13 @@ import { connect } from 'react-redux'
 import { authorizeUser, logout } from '../../redux/user/user-actions'
 import '../../style/auth.css'
 
-function Auth({ user }) {
+function Auth({ user, authorizeUser, logout }) {
     const [username, setUsername] = useState("")
     const [userPassword, setUserPassword] = useState("")
 
     const submitHandler = (e) => {
         e.preventDefault();
+        authorizeUser(username, userPassword)
     }
 
     return (
@@ -37,7 +38,7 @@ function Auth({ user }) {
                                 max="10"
                             />
                         </label>
-                        <button onClick={() => authorizeUser(username, userPassword)} className="btns login-btn">
+                        <button type="submit" className="btns login-btn">
                             Login
                         </button>
                     </fieldset>
