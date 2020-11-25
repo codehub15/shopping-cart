@@ -20,7 +20,7 @@ function Product({ product, addToCart, loadCurrentItem }) {
             <div className="product-btns">
                 <Link to={`/product/${product.id}`}>
                     <button onClick={() => loadCurrentItem(product)} className="btns view">
-                        View Item
+                        View Product
                 </button>
                 </Link>
                 <button onClick={() => addToCart(product.id)} className="btns add">
