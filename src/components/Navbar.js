@@ -18,10 +18,7 @@ function Navbar({ cart, user }) {
         <nav>
             <ul>
                 <li>
-                    <NavLink to="/" className="logo"><i className="fas fa-book-reader"></i> BookShop</NavLink>
-                </li>
-                <li>
-                    <NavLink exact to="/" activeClassName="active">Home</NavLink>
+                    <NavLink to="/" className="logo"><i className="fas fa-book-reader logo-icon"></i> BookShop</NavLink>
                 </li>
                 <li>
                     <NavLink to="/products" activeClassName="active">Products</NavLink>
