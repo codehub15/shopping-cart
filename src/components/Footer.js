@@ -4,7 +4,7 @@ import '../style/footer.css'
 export default function Footer() {
     return (
         <footer>
-            <p>Build with  ♡ by Natalia Alexandra</p>
+            <p>Built with  ♡ by Natalia Alexandra</p>
         </footer>
     )
 }
