@@ -1,0 +1,46 @@
+.title-wrapper {
+  min-width: 35vw;
+  min-height: 15.5vh;
+  padding: 3rem 1rem;
+  animation: sliding-background 40s linear infinite;
+  background: url('../assets/text-img.png') no-repeat left / 120%;
+  text-align: center;
+}
+
+.title {
+  padding: 0.5rem;
+  background: rgba(241, 243, 248,0.9);
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+  margin: 0;
+  mix-blend-mode: lighten;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px, 35 #000;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 
+  1px -1px 0 #000, -1px 1px 0 #000, 
+  1px 1px 0 #000;
+  border-radius: 3px;
+}
+
+.title:before {
+  /* padding-left: 0.5rem; */
+  color: #fff;
+  content: attr(dataText);
+  margin-left: -0.5%;
+  margin-top: -0.5%;
+  position: absolute;
+}
+
+@keyframes sliding-background {
+  0%,
+  100% {
+    background-position: 0 40%;
+  }
+
+  50% {
+    background-position: 100% 40%;
+  }
+}
